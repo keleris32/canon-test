@@ -1,0 +1,45 @@
+@import "vanilla-framework";
+
+// include all of Vanilla framework
+@include vanilla;
+
+$color-brand: #fb3b00;
+
+.p-card--post {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 15%), 0 2px 7px -1px rgb(0 0 0 / 15%), 0 0 3px 0 rgb(0 0 0 / 20%);
+    border-radius: 0.125rem;
+
+    .p-card__header {
+        border-top: 3px solid #a87ca0;
+        border-bottom: 0;
+        border-radius: 2px;
+        padding: 1rem 1rem 0.5rem;
+    }
+    
+    .p-card__content {
+        border-top: 1px dotted #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 0.5rem;
+        padding: 1rem 0.5rem 0.5rem;
+
+        h3 {
+            margin: 0.5rem 0;
+        }
+
+    }
+
+    .p-card__footer {
+        border-top: 1px dotted #d9d9d9;
+        font-size: .875rem;
+        margin: auto 0.5rem 0;
+        max-width: inherit;
+        padding: 1rem 0.5rem;
+    }
+}
+
